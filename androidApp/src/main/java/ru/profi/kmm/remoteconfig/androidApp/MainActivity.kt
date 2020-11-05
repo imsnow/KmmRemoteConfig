@@ -2,15 +2,10 @@ package ru.profi.kmm.remoteconfig.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ru.profi.kmm.remoteconfig.shared.Greeting
 import android.widget.TextView
 import ru.profi.kmm.remoteconfig.shared.AndroidSpec
 import ru.profi.kmm.remoteconfig.shared.FetchCallback
 import ru.profi.kmm.remoteconfig.shared.KMMRemoteConfig
-
-fun greet(): String {
-    return Greeting().greeting()
-}
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +28,6 @@ class MainActivity : AppCompatActivity() {
         })
 
         val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+        tv.text = "Hello"
     }
 }
