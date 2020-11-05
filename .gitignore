@@ -14,5 +14,6 @@
 .cxx
 local.properties
 
+build
 # Project exclude paths
 /shared/build/
