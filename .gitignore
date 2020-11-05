@@ -15,7 +15,7 @@
 local.properties
 
 build
-google-services.json
 GoogleService-Info.plist
+google-services.json
 # Project exclude paths
 /shared/build/
