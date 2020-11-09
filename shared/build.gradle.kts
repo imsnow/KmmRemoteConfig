@@ -50,7 +50,10 @@ kotlin {
         // By default, it is the name of the Gradle project.
         frameworkName = "shared"
 
-//        pod("Firebase/RemoteConfig")
+        ios.deploymentTarget = "13.5"
+
+        pod("FirebaseRemoteConfig", "7.0.0")
+        pod("FirebaseAnalytics", "7.0.0")
     }
 }
 android {

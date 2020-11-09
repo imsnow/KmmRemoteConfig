@@ -12,9 +12,10 @@ Pod::Spec.new do |spec|
     spec.libraries                = "c++"
     spec.module_name              = "#{spec.name}_umbrella"
 
-                
+    spec.ios.deployment_target = '13.5'
 
-                
+    spec.dependency 'FirebaseAnalytics', '7.0.0'
+    spec.dependency 'FirebaseRemoteConfig', '7.0.0'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
